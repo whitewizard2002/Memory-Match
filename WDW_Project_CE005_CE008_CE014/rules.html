@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Rules</title>
+
+    <style>
+        p,h4{
+            color: white;
+        }
+
+        body {
+            background-image: url("Assets/Images/bg.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .icon {
+            width: auto;
+        }
+
+
+        .rules_title,.special_cards_title,.difficulty_title {
+            color: aliceblue;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-bottom: 4px solid transparent;
+            border-image: linear-gradient(to right, transparent, white,transparent);
+            border-image-slice: 1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .rules {
+            text-align: center;
+            color: white;
+        }
+
+        .clock_rules {
+            height: 80px;
+            width: 80px;
+        }
+
+        .mycard {
+           
+           background-color: #121212;
+           background-color: transparent;
+           border: 1px solid rgb(253, 253, 253);
+           border-radius: 20px;
+           transition: 0.15s transform ease-in;
+           will-change: transform;
+           opacity: 1;
+
+       }
+
+       .mycard:hover {
+           transform: scale(1.1);
+           box-shadow: 1px 1px 25px #d2d5db;
+           background-color: rgba(12, 13, 14, 0.548);
+           opacity: 1;
+           transform: scale(1.03);
+
+       }
+
+        [class*="col-"] 
+       {
+           padding: 10px;
+       }
+       .col 
+       {
+           padding: 10px;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="rules_title" align="center">
+            How to play
+        </div>
+
+        <div class="row">
+
+            <div class="rules">
+                At the beginning of the game, all the cards are mixed up and laid in rows, face down on the screen.<br>
+                One by one you have to find the correct match for each card that is on the screen.However there are certain cards that work differently than normal cards, their description is mentioned below.<br>
+                You need to finish the game in alloted time.<br>
+                If you choose to quit the game halfway through than no score will be provided.
+            </div>
+        </div>
+
+        <div class="row" class="special_cards">
+            <div class="col">
+            <div class="special_cards_title"><p>Special Cards<p></div>
+            </div>
+            <div class="row">
+               
+                <div class="col" align="center">
+
+                    <!--<div class="key_rules">
+                        <img src="Assets/Images/key_rules.png">
+                    </div>
+    
+                    <div class="key_description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae earum blanditiis soluta
+                            perferendis quam quia animi accusantium doloribus amet facilis.</p>
+                    </div>-->
+
+                    <div class="card mycard" style="width: 11em;">
+                        <img src="Assets/Images/clock_rules.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">When two of the Clock cards are found, they will increase the time limit of the game</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col" align="center">
+                <div class="card mycard" style="width: 11em;">
+                    <img src="Assets/Images/key_rules.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">When found, you can use it with any other card to find its pair</p>
+                    </div>
+                </div>
+
+            </div>
+
+                <div class="col" align="center">
+                    <!--<div class="clock_rules">
+                        <img src="Assets/Images/clock_rules.png">
+                    </div>
+    
+                    <div class="clock_description">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur suscipit accusamus laborum
+                            impedit accusantium perspiciatis, nesciunt cum quia corrupti dignissimos!</p>
+                    </div>
+                </div>-->
+
+                    <div class="card mycard" style="width: 11em;">
+                        <img src="Assets/Images/eye_rules.png" class="card-img-top" class="rounded mx-auto d-block"
+                            alt="...">
+                        <div class="card-body">
+                            <p class="card-text">When The Eye is used , it will flip all the cards for a certain period of time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="difficulty_title"><p>Difficulty</p></div>
+        <div class="difficulty">
+
+            <div class="row" align="center">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mycard"  onclick="window.location.href='Card_layout_5X5.html'" style="width: 11em;">
+                        <img src="Assets/Images/easy_difficulty.png" class="card-img-top" class="rounded mx-auto d-block"
+                            alt="..." id="easy_image">
+                        <div class="card-body">
+                            <h4>Easy</h4><p class="card-text">25 cards<br>4 different cards<br>1 key Card</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mycard"  onclick="window.location.href='Card_layout_6X6.html'" style="width: 11em;">
+                        <img src="Assets/Images/medium_difficulty.png" class="card-img-top" class="rounded mx-auto d-block"
+                            alt="...">
+                        <div class="card-body">
+                            <h4>Medium</h4><p class="card-text">36 cards<br>8 different cards<br>2 key<br>2 clock cards<br>1 eye card</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mycard"  onclick="window.location.href='Card_layout_8X8.html'" style="width: 11em;">
+                        <img src="Assets/Images/hard_difficulty.png" class="card-img-top" class="rounded mx-auto d-block"
+                            alt="...">
+                        <div class="card-body">
+                            <h4>Hard</h4><p class="card-text">64 cards<br>14 different cards<br>2 key<br>4 clock cards<br>3 eye card </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+</body>
+
+</html>

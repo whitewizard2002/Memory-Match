@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        .img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            display: grid;
+            row-gap: 15px;
+        }
+
+        .col {
+            color: aliceblue;
+            font-weight: bold;
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn {
+            color: #fff;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0.25em, transparent 0.25em) center/1em 1.2em;
+            font-family: 'Nunito', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            border-radius: 20px/50px;
+            border: 2px solid white;
+            transition: all 0.5s ease 0s;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            color: #113341;
+            background: radial-gradient(circle, white 0.25em, transparent 0.25em) center/0.1em 0.1em;
+            box-shadow: 4px 4px rgba(253, 238, 172, 0.2);
+        }
+
+        @media only screen and (max-width: 767px) {
+            .btn {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body background="Assets/Images/bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <center><img src="Assets/Images/icon.png" class="rounded mx-auto d-block"></center>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text_dec">
+                <center>MEMORY MATCH</center>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col">
+                <center><button type="button" class="btn btn-outline-light" onclick="window.location.href='rules.html'">PLAY</button> </center>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
